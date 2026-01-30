@@ -12,26 +12,39 @@
   <!-- HEADER (igual ao print) -->
   <header class="header-top">
     <div class="container header-top__inner">
-      <div class="brand">
-        <!-- Logo exemplo -->
-        <img class="brand__logo" src="https://dummyimage.com/260x85/000/fff&text=TR%C3%8AS+IRM%C3%83S" alt="Três Irmãs" />
-        <span class="brand__tag">DESENTUPIMENTO PROFISSIONAL</span>
-      </div>
+		<div class="brand">
+		  <a href="index.html" aria-label="Ir para a página inicial">
+			<img class="brand__logo"
+				 src="img/logo-tres-irmas.jpeg"
+				 alt="Três Irmãs - Limpa Fossa e Desentupidora" />
+		  </a>
+		</div>
 
       <div class="header-contacts">
         <div class="contact">
-          <div class="contact__icon contact__icon--wa" aria-hidden="true">🟢</div>
+			<div class="contact__icon contact__icon--wa" aria-hidden="true">
+			  <!-- WhatsApp -->
+			  <svg class="icon-svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+				<path d="M19.11 17.45c-.2-.1-1.16-.57-1.34-.64-.18-.06-.31-.1-.44.1-.13.2-.51.64-.62.77-.11.13-.22.15-.42.05-.2-.1-.83-.3-1.58-.96-.58-.52-.97-1.17-1.08-1.36-.11-.2-.01-.3.08-.4.08-.08.2-.22.3-.33.1-.11.13-.2.2-.33.06-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.33h-.38c-.13 0-.35.05-.53.25-.18.2-.7.69-.7 1.69s.72 1.97.82 2.11c.1.13 1.42 2.17 3.44 3.04.48.2.85.32 1.14.41.48.15.91.13 1.25.08.38-.06 1.16-.47 1.32-.93.16-.46.16-.86.11-.93-.05-.08-.18-.13-.38-.23z"/>
+				<path d="M26.64 5.36A14.92 14.92 0 0 0 16.02 1C7.75 1 1.02 7.73 1.02 16c0 2.64.69 5.21 2.01 7.49L1 31l7.67-2.01a14.9 14.9 0 0 0 7.35 1.88h.01c8.27 0 15-6.73 15-15a14.9 14.9 0 0 0-4.39-10.51zM16.03 28.4h-.01a12.4 12.4 0 0 1-6.32-1.73l-.45-.27-4.55 1.19 1.21-4.44-.29-.46a12.36 12.36 0 0 1-1.9-6.68C3.72 9.1 9.11 3.7 16.03 3.7c3.31 0 6.43 1.29 8.77 3.63a12.34 12.34 0 0 1 3.63 8.77c0 6.91-5.49 12.3-12.4 12.3z"/>
+			  </svg>
+			</div>
           <div class="contact__text">
             <span class="contact__label">ORÇAMENTO WHATSAPP</span>
-            <strong class="contact__value">(48) 98809-1540</strong>
+            <a class="contact__value-link" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener"><strong class="contact__value">(49) 99954-1000</strong></a>
           </div>
         </div>
 
         <div class="contact contact--urgent">
-          <div class="contact__icon contact__icon--call" aria-hidden="true">🔴</div>
+			<div class="contact__icon contact__icon--call" aria-hidden="true">
+			  <!-- Telefone -->
+			  <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+				<path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.07 21 3 13.93 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+			  </svg>
+			</div>
           <div class="contact__text">
             <span class="contact__label">LIGAÇÃO URGENTE</span>
-            <strong class="contact__value">(48) 98809-1540</strong>
+            <a class="contact__value-link" href="tel:+5549999541000"><strong class="contact__value">(49) 99954-1000</strong></a>
           </div>
         </div>
       </div>
@@ -41,14 +54,13 @@
   <nav class="nav">
     <div class="container nav__inner">
       <ul class="nav__menu">
-        <li><a href="#">INÍCIO</a></li>
-        <li><a href="#">EMPRESA</a></li>
-        <li><a href="#">SERVIÇOS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTATO</a></li>
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="empresa.html">EMPRESA</a></li>
+        <li><a href="servicos.html">SERVIÇOS</a></li>        
+        <li><a href="contato.html">CONTATO</a></li>
       </ul>
 
-      <a class="nav__cta" href="#">ORÇAMENTO GRÁTIS</a>
+      <a class="nav__cta" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">ORÇAMENTO GRÁTIS</a>
     </div>
   </nav>
 
@@ -56,10 +68,11 @@
   <section class="hero">
     <div class="hero__overlay"></div>
     <div class="container hero__content">
-      <h1>SERVIÇO PROFISSIONAL</h1>
+      <h1>CONHEÇA A TRÊS IRMÃS</h1>
       <ul class="hero__bullets">
         <li>✔ Desentupimento de pias, ralos, vasos e muito mais</li>
         <li>✔ Limpeza de fossa, caixa de gordura e sumidouros</li>
+		<li>✔ Atendimento 24h para emergências</li>
       </ul>
     </div>
   </section>
@@ -70,48 +83,50 @@
       <div class="stripe__box">
         <div class="stripe__title">📞 <strong>ATENDIMENTO 24 HORAS</strong></div>
         <div class="stripe__subtitle">Orçamento gratuito</div>
-        <a class="stripe__btn" href="#">Solicitar Orçamento</a>
+        <a class="stripe__btn" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">Solicitar Orçamento</a>
       </div>
 
       <div class="stripe__box">
         <div class="stripe__title">📞 <strong>DEMAIS REGIÕES</strong></div>
         <div class="stripe__subtitle">Orçamento no local grátis</div>
-        <a class="stripe__btn" href="#">Solicitar Orçamento</a>
+        <a class="stripe__btn" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">Solicitar Orçamento</a>
       </div>
+
+
     </div>
   </section>
 
   <!-- SERVIÇOS -->
-  <section class="services">
+  <section class="services" id="servicos">
     <div class="container">
       <h2 class="section-title">Nossos serviços</h2>
 
       <div class="services__grid">
         <article class="service-card">
           <div class="service-card__media">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=70" alt="Desentupimento" />
+            <img src="img/desentupimento.png" alt="Desentupimento" />
           </div>
           <h3>DESENTUPIMENTO</h3>
           <p>Pias, ralos, vasos e mais</p>
-          <a class="service-card__btn" href="#">(48) 98809-1540</a>
+          <a class="service-card__btn" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">(49) 99954-1000</a>
         </article>
 
         <article class="service-card">
           <div class="service-card__media">
-            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=70" alt="Limpa fossa" />
+            <img src="img/limpa-fossa.png" alt="Limpa fossa" />
           </div>
           <h3>LIMPA FOSSA</h3>
           <p>Esgotamento e limpeza</p>
-          <a class="service-card__btn" href="#">(48) 98809-1540</a>
+          <a class="service-card__btn" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">(49) 99954-1000</a>
         </article>
 
         <article class="service-card">
           <div class="service-card__media">
-            <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=900&q=70" alt="Hidrojateamento" />
+            <img src="img/hidrojateamento.png" alt="Hidrojateamento" />
           </div>
           <h3>HIDROJATEAMENTO</h3>
           <p>Desobstrução de tubulações</p>
-          <a class="service-card__btn" href="#">(48) 98809-1540</a>
+          <a class="service-card__btn" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">(49) 99954-1000</a>
         </article>
       </div>
     </div>
@@ -134,12 +149,12 @@
           e técnicas especializadas para garantir um serviço de <strong>alta qualidade</strong>.
         </p>
 
-        <a class="btn-red" href="#">Solicitar Orçamento</a>
+        <a class="btn-red" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">Solicitar Orçamento</a>
       </div>
 
       <div class="about__col">
         <div class="about__img">
-          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=70" alt="Serviço profissional" />
+          <img src="img/servico-atendimento-encanamento.png" alt="Serviço profissional" />
         </div>
 
         <h3 class="about__subtitle">Por que escolher nossos serviços?</h3>
@@ -150,12 +165,12 @@
           <li>✔ Preço justo e orçamento grátis</li>
         </ul>
 
-        <a class="link-red" href="#">Nossos serviços ›</a>
+        <a class="link-red" href="servicos.html">Nossos serviços ›</a>
       </div>
 
       <div class="about__col">
         <div class="about__img">
-          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=900&q=70" alt="Atendimento" />
+          <img src="img/servico-atendimento-agendamento.png" alt="Atendimento" />
         </div>
 
         <h3 class="about__subtitle">Nosso atendimento</h3>
@@ -164,13 +179,13 @@
           Solicite um orçamento agora!
         </p>
 
-        <a class="link-red" href="#">Fale conosco ›</a>
+        <a class="link-red" href="https://wa.me/5549999541000?text=Ol%C3%A1%21%20%F0%9F%91%8B%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F">Fale conosco ›</a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" id="contato">
     <div class="container footer__grid">
       <div>
         <h3>Três Irmãs</h3>
@@ -184,17 +199,18 @@
           <li>Limpeza de fossa</li>
           <li>Caixa de gordura</li>
           <li>Hidrojateamento</li>
+          <li>Fresamento de asfalto</li>
         </ul>
       </div>
 
       <div>
         <h4>Contato</h4>
-        <p>(48) 98809-1540</p>
-        <p>contato@tresirmasdesentupidora.com.br</p>
+        <p>(49) 99954-1000</p>
+        <p>agroprestadora@gmail.com</p>
       </div>
     </div>
 
-    <div class="footer__copy">© 2026 Desentupidora Três Irmãs – Todos os direitos reservados</div>
+    <div class="footer__copy">© Três Irmãs Limpa Fossa e Desentupidora – Todos os direitos reservados</div>
   </footer>
 
 </body>
