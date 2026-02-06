@@ -748,3 +748,56 @@ body{color:var(--text);background:#fff}
 .brand a:hover{
   opacity:0.95;
 }
+
+/* Bloco do WhatsApp no cabeçalho */
+.contact__text{
+  display:flex;
+  flex-direction:column;
+  gap:6px; /* espaço geral mais compacto */
+}
+
+/* Label */
+.contact__label{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.3px;
+  margin-bottom:2px; /* menos espaço até o primeiro telefone */
+}
+
+/* Links */
+.contact__value-link{
+  text-decoration:none;
+}
+
+/* Telefones */
+.contact__value{
+  font-size:20px;
+  font-weight:700;
+  color:#222;
+  line-height:1.2;
+}
+
+/* Linha divisória entre os telefones */
+.contact__value-link--alt{
+  position:relative;
+  margin-top:6px;
+  padding-top:8px;
+}
+
+.contact__value-link--alt::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:40px;
+  height:2px;
+  background:var(--blue-light); /* cor clara do logo */
+  border-radius:2px;
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .contact__value{
+    font-size:18px;
+  }
+}
